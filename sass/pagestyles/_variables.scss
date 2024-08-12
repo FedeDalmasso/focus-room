@@ -1,0 +1,13 @@
+$color-primario:  #773b5e;
+$color-secundario: #530d36;
+$color-terciario: #F5F5F5;
+@mixin out {
+    display: none;
+    }
+@mixin contenidomain {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    }
+      
