@@ -4,7 +4,9 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <meta name="description" content="Tres sedes con accesos multisede en todos los pases. Entrenamiento eficiente en 45 minutos. Pedí tu clase de prueba">
+        <meta name="keywords" content="gimnasio, sedes, gimnasios cerca de mí, entrenamiento, fitness, acondicionamiento físico, bienestar, salud, gimnasio en Rosario, gimnasio en zona centro, horarios de gimnasio, precios de gimnasio">
+
         <!--BT STYLE-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         
@@ -13,77 +15,47 @@
         
         <!--TITULO DE PESTAÑA CON IMAGEN-->
         <link rel="shortcut icon" href="../img/logo.png">
-        <title>Entrena tu Voluntad</title>
+        <title>Focus | Sedes</title>
    
     </head>
 
     <body>
       <div class="contenido">
         <header>
-          <!--NAVBAR BT BOTON CON DESPLAZAMIENTO LATERAL DE MOVIL-->
-          <nav class="navbar fixed-top">
+          <!--NAVBAR BT-->
+          <nav class="encabezado navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"> <img src="../img/logo-header.png" alt="Isologo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <a class="navbar-brand" href="../index.html"><img src="../img/logo-header.png" alt="IsoLogo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../img/logo-header.png" alt="Isologo"></h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link" href="../pages/sedes.html">SEDES</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../pages/horarios.html">HORARIOS</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../pages/ddp.html">DIA DE PRUEBA</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../pages/asociate.html">ASOCIATE</a>
-                    </li>
-                 </div>
-              </div>
-            </div>
-          </nav>
-
-          <!--NAVBAR CLASICO PARA DESK-->
-          <nav class="nav-desk"> 
-            <a href="../index.html"> 
-               <img src="../img/logo-header.png" alt="logo-header">
-            </a>
-            
-            <ul>
-              <li class="navlink">
-                <a href="../pages/sedes.html" style="text-decoration: overline; font-weight: bold;">SEDES</a>
-              </li>
-              <li class="navlink">
-                <a href="../pages/horarios.html">HORARIOS</a>
-              </li>
-              <li class="navlink">
-                <a href="../pages/ddp.html">DIA DE PRUEBA</a>
-              </li>
-              <li class="navlink">
-                <a href="../pages/contacto.html">CONTACTO</a>
-              </li>
-              <li class="navlink">
-                <a href="../pages/asociate.html">ASOCIATE</a>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto gap-3 text-end">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./sedes.html">SEDES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./horarios.html">HORARIOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./ddp.html">DIA DE PRUEBA</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./asociate.html">ASOCIATE</a>
               </li>
             </ul>
-           </nav>
+            </div>
+            </div>
+          </nav>
         </header>
         <main>
             <div class="div-main">
                 <!--TITUTLO DE PAGINA-->
                 <h1>SEDES</h1>   
-                <!--SEDES CON LINK A WS DE CADA UNA-->
+                <!--MENU SEDES MOVIL CON LINK A WS-->
                 <div class="img-mq-sedes">
                     <div> 
                         <a href="https://wa.me/3412271755" target="_blank"> <img src="../img/sedesmq1.jpg" alt="sede-santa-fe"></a>
@@ -96,8 +68,10 @@
                     </div>
                 </div>
             </div>
-            <!--MENU DE SEDES-->
-            <div class="contenido-main">
+            
+           
+              <!--MENU DE SEDES DESK-->
+              <div class="contenido-main">
                 <div class="card" style="width: 22rem;">
                   <a href="../pages/horarios.html"><img src="../img/Santa-Fe.jpg" class="img-sedes card-img-top" alt="Sede Santa Fe"></a> 
                     <div class="card-body text-center">
@@ -123,6 +97,8 @@
                     </div>
                 </div>
             </div>
+           
+
           </main>
 
           <footer>

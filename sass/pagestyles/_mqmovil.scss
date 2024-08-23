@@ -2,17 +2,13 @@
 
 body{   
     .contenido { 
-    display: grid;
-    grid-template-rows: 1fr 720px 1fr; 
+        @include bodysize; 
     }
    
 }
 
 header {
-    .nav-desk {
-        @include out;   
-    }
-    .navbar a:hover {
+    .encabezado a:hover {
         font-weight:bold;
        }
     
@@ -22,14 +18,13 @@ main {
     align-content: center;
    
     .div-main {background-color: $color-terciario; 
-           
-    }  
+     }  
 
     .img-mq{
        
         display: grid;
-        grid-template-columns: 90px 90px 90px;
-        grid-template-rows: 550px;
+        grid-template-columns: 70px 70px 70px;
+        grid-template-rows: 450px;
         justify-content: center;
         align-content: center;
         gap: 10px;
@@ -41,10 +36,14 @@ main {
             }   
         }
 
+        .leyenda-index {
+            @include out;
+        }
+
     
 
     h1 {
-        padding-bottom: 25px;        
+        padding: 10px 0;        
        text-align: center;
     
     }
@@ -55,6 +54,12 @@ main {
         @include out;
     }
     .contenido-main {
+        @include out;
+    }
+    .sedes-tablet {
+        @include out;
+       }
+    .contenido-grillas {
         @include out;
     }
    
@@ -72,8 +77,7 @@ main {
     }
     .contenido-contacto {
         background-color: $color-terciario;
-                             
-    }
+     }
     .imagen-contacto {
         @include out;
     }
@@ -81,8 +85,8 @@ main {
     .img-mq-asociate{
     
         display: grid;
-        grid-template-rows: 190px 190px 190px;
-        grid-template-columns: 550px;
+        grid-template-rows: 300px 300px 300px;
+        grid-template-columns: auto;
         justify-content: center;
         align-content: center;
         gap: 10px;
@@ -98,7 +102,7 @@ main {
     
             display: grid;
             grid-template-rows: 150px 150px 150px;
-            grid-template-columns: 550px;
+            grid-template-columns: auto;
             justify-content: center;
             align-content: center;
             gap: 25px;
@@ -113,12 +117,12 @@ main {
             .img-mq-horarios{
     
                 display: grid;
-                grid-template-rows: 65px 65px 65px;
-                grid-template-columns: 550px;
+                grid-template-rows: auto auto auto;
+                grid-template-columns: auto;
                 justify-content: center;
                 align-content: center;
-                gap: 80px;
-                padding: 40px 0;
+                gap: 30px;
+                padding: 20px 0;
                                 
                         div img {
                         width: 100%;
@@ -140,11 +144,10 @@ main {
 }
 footer {
     
-    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
     
 
 

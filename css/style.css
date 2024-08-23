@@ -6,13 +6,10 @@
 
 body .contenido {
   display: grid;
-  grid-template-rows: 1fr 720px 1fr;
+  grid-template-rows: 60px auto 1fr;
 }
 
-header .nav-desk {
-  display: none;
-}
-header .navbar a:hover {
+header .encabezado a:hover {
   font-weight: bold;
 }
 
@@ -25,8 +22,8 @@ main .div-main {
 }
 main .img-mq {
   display: grid;
-  grid-template-columns: 90px 90px 90px;
-  grid-template-rows: 550px;
+  grid-template-columns: 70px 70px 70px;
+  grid-template-rows: 450px;
   justify-content: center;
   align-content: center;
   gap: 10px;
@@ -36,8 +33,11 @@ main .img-mq div img {
   height: 100%;
   object-fit: cover;
 }
+main .leyenda-index {
+  display: none;
+}
 main h1 {
-  padding-bottom: 25px;
+  padding: 10px 0;
   text-align: center;
 }
 main p {
@@ -47,6 +47,12 @@ main .contenido-index {
   display: none;
 }
 main .contenido-main {
+  display: none;
+}
+main .sedes-tablet {
+  display: none;
+}
+main .contenido-grillas {
   display: none;
 }
 main .contenido-ddp {
@@ -68,8 +74,8 @@ main .imagen-contacto {
 }
 main .img-mq-asociate {
   display: grid;
-  grid-template-rows: 190px 190px 190px;
-  grid-template-columns: 550px;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: auto;
   justify-content: center;
   align-content: center;
   gap: 10px;
@@ -82,7 +88,7 @@ main .img-mq-asociate div img {
 main .img-mq-sedes {
   display: grid;
   grid-template-rows: 150px 150px 150px;
-  grid-template-columns: 550px;
+  grid-template-columns: auto;
   justify-content: center;
   align-content: center;
   gap: 25px;
@@ -94,12 +100,12 @@ main .img-mq-sedes div img {
 }
 main .img-mq-horarios {
   display: grid;
-  grid-template-rows: 65px 65px 65px;
-  grid-template-columns: 550px;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
   justify-content: center;
   align-content: center;
-  gap: 80px;
-  padding: 40px 0;
+  gap: 30px;
+  padding: 20px 0;
 }
 main .img-mq-horarios div img {
   width: 100%;
@@ -115,48 +121,16 @@ main .btn-primary:hover {
 }
 
 footer {
-  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 50px;
 }
 
 @media screen and (min-width: 1024px) {
   body .contenido {
     display: grid;
-    grid-template-rows: 0.5fr auto 1fr;
-  }
-  header .navbar {
-    display: none;
-  }
-  header .nav-desk {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: end;
-    padding-left: 35px;
-    padding-top: 20px;
-  }
-  header .nav-desk ul {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 50%;
-    justify-content: space-between;
-    padding-right: 60px;
-    list-style: none;
-  }
-  header .nav-desk .navlink a {
-    text-decoration: none;
-    text-align: end;
-    color: black;
-  }
-  header .nav-desk li:hover {
-    font-weight: bold;
-    transform: scale(1.15);
-  }
-  header .nav-desk li:link {
-    border: solid black 2pt;
+    grid-template-rows: 60px auto 1fr;
   }
   main {
     background-color: #F5F5F5;
@@ -185,6 +159,11 @@ footer {
   }
   main .contenido-ddp .imagen-ddp {
     display: block;
+  }
+  main .contenido-grillas {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
   }
   main .p-contacto {
     display: none;
